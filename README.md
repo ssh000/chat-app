@@ -12,7 +12,8 @@ This is simple `Create React App` application. Run `yarn`(`npm i`) and `yarn sta
 4. When you hit `enter` to send a new message UI doesn't wait response from a server. it was done intentionally to show some `Optimistic` UI approach;
 5. Selected chat is highlighted.
 6. Date format internationalization.
-7. Will work on last 1 version of: Edge, Firefox, Chrome.
+7. BEM naming convetion for the styles.
+8. Will work on last 1 version of: Edge, Firefox, Chrome.
 
 # WHAT TO IMPROVE
 
