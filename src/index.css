@@ -5,9 +5,91 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.chat-app {
+  display: flex;
+}
+
+.chat-app__chat {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1;
+  background-color: #E6EBEE;
+}
+
+.chat-app__conversations {
+  width: 300px;
+  overflow: auto;
+  height: 100vh;
+}
+
+.chat-app__conversation {
+  height: 80px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.chat-app__conversation-details {
+  padding: 4px 10px;
+}
+
+.chat-app__conversation-name {
+  margin-bottom: 10px;
+}
+
+.chat-app__conversation-last-seen {
+  color: #82878A
+}
+
+.chat-app__conversation-avatar {
+  background-color: #C4C9CC;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-image: url("/dog.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.chat-app__conversation.chat-app__conversation--selected {
+  background-color: #F4F4F5;
+}
+
+.chat-app__messages {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  height: calc(100vh - 98px);
+  width: 80%;
+  overflow: auto;
+  padding: 16px 0;
+}
+
+.chat-app__message.chat-app__message--me {
+  background-color: #EEFEDF;
+  align-self: flex-end;
+}
+
+.chat-app__message {
+  align-self: flex-start;
+  margin-top: 8px;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #DCE1E5;
+  min-width: 100px;
+}
+
+.chat-app__message-timestamp {
+  text-align: right;
+  font-size: 10px;
+  margin-top: 8px;
 }

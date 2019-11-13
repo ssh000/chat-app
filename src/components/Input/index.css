@@ -1,0 +1,15 @@
+.chat-app__new-message {
+    width: 80%;
+    margin-bottom: 16px;
+}
+  
+.chat-app__new-message-input {
+    resize: none;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #DCE1E5;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 50px;
+}
